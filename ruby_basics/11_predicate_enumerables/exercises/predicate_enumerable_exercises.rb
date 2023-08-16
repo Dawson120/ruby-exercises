@@ -20,6 +20,5 @@ end
 
 def valid_scores?(score_list, perfect_score)
   # use #one? to return true when only one value in the score_list (hash) is equal to the perfect_score (number)
-  score_list.one? {|score| score == perfect_score}
-  # I dont understand why I'm getting false
+  score_list.values.one? { |score| score == perfect_score }
 end
