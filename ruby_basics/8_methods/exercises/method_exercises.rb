@@ -3,6 +3,10 @@
 # Remember to unskip the corresponding tests one at a time.
 
 # method name: #ascii_translator
+def ascii_translator(number)
+    character = number.chr
+    character
+end
 # parameter: number (an integer)
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
