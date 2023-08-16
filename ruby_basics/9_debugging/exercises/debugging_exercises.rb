@@ -1,3 +1,4 @@
+require 'pry-byebug'
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
 # Type 'rspec' into the terminal to run Rspec
@@ -36,16 +37,11 @@ end
 # Use p and puts in order to find what's wrong with our method
 
 def isogram?(string)
-  original_length = string.length
-
-  p original_length
-
-  string_array = string.downcase.split
-  p string_array
-  unique_length = string_array.uniq.length
-  p unique_length
+  string_array = string.downcase.split('')
+  unique_array = string_array.uniq
+  original_length = string_array.length
+  unique_length = unique_array.length
   original_length == unique_length
-  p original_length
 end
 
 # Can you guess what's next?
