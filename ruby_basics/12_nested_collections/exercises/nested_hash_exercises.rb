@@ -69,5 +69,5 @@ def find_language_facts(languages, language_name, fact_index = 0)
   #                 is_beautiful?: false }
   # }
   language = languages[language_name]
-
+  language && language[:facts] ? language[:facts][fact_index] : nil
 end
